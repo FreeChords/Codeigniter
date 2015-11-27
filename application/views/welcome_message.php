@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </div>
 
 <div>
-<a href="controllers/upload.php" class="button">Subir Video</a>
+<a href="Upload" class="button">Subir Video</a>
 
 </div>
 
