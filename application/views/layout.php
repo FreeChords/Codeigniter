@@ -32,6 +32,5 @@ h1 {
 	<div id="header">
 		<h1>FreeChords</h1>
 	</div>
-<body background="home-picture.jpg">
-
 </head> 
+<body background="home-picture.jpg">
