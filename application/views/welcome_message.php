@@ -18,15 +18,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </style>
 <body>
 <div>
+<?=form_open("action_page/buscando") ?>
+<?php
+$nombre= array(
+    'name'=>'nombre',
+    'placeholder'=>'titulo de video'
+      ) ?>
 
-<form>
-  <h2>Buscar Banda:</h2>
-  <input type="text" name="Banda"> <BR>
-  <input type="submit" value="Ready2Rock">
-  <br><BR>
 
-<form action="action_page.php">
+<?= form_label('Titulo','nombre')?>
+<?= form_input($nombre) ?>
 
+<?= form_submit('','Buscar') ?>
+<?= form_close()?>
 </div>
 
 <div>
