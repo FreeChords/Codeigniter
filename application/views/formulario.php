@@ -1,26 +1,48 @@
-<?php form_open("/datainput") ?> 
-
-
 <?php
-	$nombre = array(
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+
+
+
+
+<?=form_open("Upload/datainput") ?>
+<?php
+	 
+	 $nombre = array(
 		'name' => 'nombre' ,
-		 'placeholder' =>'Ingrese su nombre' 
+		 'placeholder' =>'Titulo del Video' 
 		 );
 
-	$video = array(
+	 $video = array(
 		'name' => 'video',
-		'placeholder'=>'Escribe tu video'
-		); 
+		'placeholder'=>'Ej:www.youtube.com/embed/f1C9'
+				); 
 	
 ?>
 
- <?=form_label('Nombre:','nombre') ?>
- <?=form_input($nombre) ?>
+
+
+
+<?php 
+echo form_label('Banda: '),form_dropdown('idBanda', $arrBanda);
+
+?>
+
+FALTA VALIDAR
+
+ <br><br>
+ 
+ <?=  form_label('Titulo:','nombre') ?>
+ <?=  form_input($nombre) ?>
 <br><br>
- <?=form_label('Video:','video') ?>
- <?=form_input($video)?>
- <?=form_submit('','Subir Video')?>
- <?=form_close()?>
+ <?=  form_label('Link del Video:','video') ?>
+ <?=  form_input($video)?>
+ <br><br>
+ <?=  form_submit('Control','Subir Video')?>
+ <?=  form_close()?>
+
+ 
+  
 </body>
 
 </html>
