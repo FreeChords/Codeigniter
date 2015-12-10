@@ -1,11 +1,13 @@
-<?=form_open("Upload/datainput") ?> 
-
-
 <?php
-	 $banda = array(
-	 	'name' => 'banda',
-	 	'placeholder'=>'Nombre Banda'
-	 	);
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+
+
+
+
+<?=form_open("Upload/datainput") ?>
+<?php
+	 
 	 $nombre = array(
 		'name' => 'nombre' ,
 		 'placeholder' =>'Titulo del Video' 
@@ -17,10 +19,19 @@
 				); 
 	
 ?>
- <?=  form_label('Banda:','banda') ?>
- <?=  form_input($banda) ?>
- <br><br>
 
+
+
+
+<?php 
+echo form_label('Banda: '),form_dropdown('idBanda', $arrBanda);
+
+?>
+
+FALTA VALIDAR
+
+ <br><br>
+ 
  <?=  form_label('Titulo:','nombre') ?>
  <?=  form_input($nombre) ?>
 <br><br>
@@ -29,6 +40,9 @@
  <br><br>
  <?=  form_submit('Control','Subir Video')?>
  <?=  form_close()?>
+
+ 
+  
 </body>
 
 </html>
