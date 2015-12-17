@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
-
+<head>
    <style type="text/css">
 body {
     width: 100%;
@@ -15,20 +15,20 @@ body {
 
 <div class="container">    
     <div class="jumbotron">
-<?=form_open("Upload/datainput") ?>
+<?=form_open("login/verify") ?>
 <?php
 	 
 	 $nombre = array(
 		'name' => 'nombre' ,
-		 'placeholder' =>'Titulo del Video' ,
+		 'placeholder' =>'Ingrese su Nick' ,
 		 'required'=>'TRUE'
 		 );
 
-	 $video = array(
-		'name' => 'video',
-		'placeholder'=>'Ej:www.youtube.com/embed/f1C9',
+	 $clave = array(
+		'name' => 'clave',
+		'placeholder'=>'ingrese su clave',
 		'required'=>'TRUE',
-		'type'=>'url'
+		'type'=>'password'
 
 				); 
 	
@@ -37,22 +37,16 @@ body {
 
 
 
-<?php 
-echo form_label('Banda: '),form_dropdown('idBanda', $arrBanda);
-
-?>
-
-
 
  <br><br>
  
- <?=  form_label('Titulo:','nombre') ?>
+ <?=  form_label('Nick:','nombre') ?>
  <?=  form_input($nombre) ?>
 <br><br>
- <?=  form_label('Link del Video:','video') ?>
- <?=  form_input($video)?>
+ <?=  form_label('Clave:','clave') ?>
+ <?=  form_input($clave)?>
  <br><br>
- <?=  form_submit('Control','Subir Video')?>
+ <?=  form_submit('Control','Iniciar Sesion')?>
  <?=  form_close()?>
 
  

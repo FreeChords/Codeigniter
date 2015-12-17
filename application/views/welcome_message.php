@@ -1,38 +1,52 @@
-<?php
+<?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
+?>
 <style type="text/css">
-.button {
-	position: absolute;
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 25px 60px;
-    text-decoration: none;
-    font-size: 24px;
-    cursor: pointer;
-    top: 300px;
-    left:650px;
+body{
+    width: 100%;
+    height: 400px;
+    background-image: url("http://tenerifemusic.com/wp-content/uploads/2015/06/453190_tolpa_lyudi_koncert_ruki_vverx_1680x1050_www.GdeFon.ru_.jpg");
+    background-size: cover;
+    
 }
 </style>
 <body>
-<div>
 
-<form>
-  <h2>Buscar Banda:</h2>
-  <input type="text" name="Banda"> <BR>
-  <input type="submit" value="Ready2Rock">
-  <br><BR>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
 
-<form action="action_page.php">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="concierto.jpg" alt="Image">
+              
+      </div>
 
+      <div class="item">
+        <img src="estudio.jpg" alt="Image">
+             
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
 </div>
-
-<div>
-<a href="index.php/Upload/form" class="button">Subir Video</a>
-
-</div>
+  
+<div class="container text-center">    
+  <h3 >Te ayudamos a darte a conocer en el mundo musical</h3><br>
+ 
+</div><br>
 
 
 </body>
