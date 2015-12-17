@@ -1,7 +1,6 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
-<<<<<<< HEAD
 <style type="text/css">
 body{
     width: 100%;
@@ -32,15 +31,6 @@ body{
              
       </div>
     </div>
-=======
-<body>
-<div>
-<a href="index.php/action_page/index" class="botoncito">Buscar videos</a>
-</div>
-
-<div>
-<a href="index.php/Upload/form" class="button">Subir Video</a>
->>>>>>> origin/Diego
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
