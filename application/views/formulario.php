@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
+<<<<<<< HEAD
 
 
    <style type="text/css">
@@ -15,6 +16,12 @@ body {
 
 <div class="container">    
     <div class="jumbotron">
+=======
+
+
+
+
+>>>>>>> origin/Diego
 <?=form_open("Upload/datainput") ?>
 <?php
 	 
@@ -42,7 +49,11 @@ echo form_label('Banda: '),form_dropdown('idBanda', $arrBanda);
 
 ?>
 
+<<<<<<< HEAD
 
+=======
+FALTA VALIDAR
+>>>>>>> origin/Diego
 
  <br><br>
  
@@ -56,8 +67,12 @@ echo form_label('Banda: '),form_dropdown('idBanda', $arrBanda);
  <?=  form_close()?>
 
  
+<<<<<<< HEAD
  </div>
 </div>
+=======
+  
+>>>>>>> origin/Diego
 </body>
 
 </html>

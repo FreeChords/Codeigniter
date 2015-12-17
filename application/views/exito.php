@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 
 <html>
 <head>
@@ -13,10 +14,19 @@ body {
  }
 
 </style>
+=======
+<html>
+<head>
+>>>>>>> origin/Diego
 	<title>Exito</title>
 </head>
 <body>
 
+<<<<<<< HEAD
 <h1>Almacenado con exito</h1>
+=======
+<p>Almacenado con exito</p>
+
+>>>>>>> origin/Diego
 </body>
 </html>
